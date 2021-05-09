@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Bitter Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+
+    <!-- Playball font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="index.js" async></script>
+
+    <title>Delicious</title>
+
+    <!-- favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light text-white nav-headings">
+        <div class="container-fluid container">
+            <span class="navbar-brand logo text-white ml-4">Delicious</span>
+        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="MainProject.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#my-cart-section">MyCart
+                    <i class="fas fa-shopping-cart p-1 icon"></i><span class="badge badge-light" id="no-of-items-nav">0</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">SignIn</a>
+            </li>
+        </ul>
+        <form class="d-flex mx-4">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary text-white" type="submit">Search</button>
+        </form>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- pragati's code -->
+
+    <!-- opening image -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/image.jpeg" class=" d-block main-img w-100 img-fluid" alt="food-image">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="Delicious-heading text-center d-block ">Delicious</p>
+                    <p class="foodies-line text-center d-block">A place for Foodies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Collections text -->
+    <p class=" coll-text1 text-xl-start lh-1">Collections </p>
+    <p class="coll-text2 text-md-start lh-1">Explore your favourite dishes here.</p><br>
+
+    <!-- collections cards -->
+    <div class="container">
+        <center>
+            <div class="row">
+
+                <!-- Vegetarian foods-card -->
+                <div class="col-md-4 col-sm-12 my-2 mr-2 bg-light shadow">
+                    <div class="card1  bg-light text-white shadow mt-4">
+                        <a href="#veg-section">
+                            <img src="images/vegeterian food.jpeg" class="card-img" alt="veg-food">
+                        </a>
+                        <h3 class="type p-1">Vegetarian Food</h3>
+                    </div>
+                </div>
+
+                <!-- Non-veg food-card -->
+                <div class="col-md-4 col-sm-12 my-2 bg-light shadow">
+                    <div class="card1 bg-ligth text-white shadow mt-4">
+                        <a href="#nonveg-section">
+                            <img src="images/Non-VegFood.jpeg" class="card-img" alt="non-veg-food">
+                        </a>
+                        <h3 class="type p-1">Non Vegetarian Food</h3>
+                    </div>
+                </div>
+
+                <!-- dessert food card -->
+                <div class="col-md-4 col-sm-12 my-2 ml-2 bg-light shadow">
+                    <div class="card1 bg-light text-white shadow mt-4">
+                        <a href="#desserts-section">
+                            <img src="images/Desserts.jpeg" class="card-img" alt="Desserts">
+                        </a>
+                        <h3 class="type p-1">Desserts</h3>
+                    </div>
+                </div>
+
+            </div>
+        </center>
+    </div>
+
+    <!-- Vegetarian -->
+    <div id="veg-section" class="container btn-light zoom">
+        <h1 class="p-4 text-center mt-4">Vegetarian</h1>
+    </div>
+
+    <!-- Cards in 4*x way -->
+    <div class="container">
+
+        <!-- First Row -->
+
+        <div class="row my-4">
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/veg momos.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Veg Momos</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">200</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/veg burger.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Veg Burger</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9733; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">99</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/chowmin.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Veg Noodles</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">249</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/Gralic_Crust_Veggie_Pizza.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Veg Pizza</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">299</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Second Row -->
+        <div class="row">
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/pasta veg.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Veg Pasta</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">399</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/manchurian.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Veg Manchurian</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9734; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">299</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/GRILLED-CHEESE-SANDWICH.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Grilled Sandwich</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">149</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/tacos.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Veg Tacos</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9734; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">199</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <!-- Vegetarian -->
+
+    <!-- Non Vegetarian -->
+    <div id="nonveg-section" class="container btn-light shadow zoom">
+        <h1 class="p-4 text-center mt-4">Non Vegetarian</h1>
+    </div>
+
+    <!-- Cards in 4*x way -->
+    <div class="container">
+
+        <!-- First Row -->
+        <div class="row my-4">
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/chicken lolipop.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Chicken Lolipop</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">199</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/chicken wings.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Chicken Wings</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9733; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">349</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/chicken-tikka-kabab-recipe-india.jpeg" class="card-img-top shop-item-image"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Chicken Tikka</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">249</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/chicken biryani.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Chicken Biryani</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9733; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">399</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Second Row -->
+        <div class="row">
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/fish fried.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Fried Fish</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">249</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/Tandoori-Chicken-Momos-are-a-speciality-in-Delhi.jpeg"
+                        class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Chicken Momos</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9734; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">149</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/Chicken-Egg-Rolls.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Egg Roll</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">99</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/Chicken-Pasta.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Chicken Pasta</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">449</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <!-- Non Vegetarian -->
+
+    <!-- Desert -->
+    <div id="desserts-section" class="container btn-light shadow zoom">
+        <h1 class="p-4 text-center mt-4">Dessert</h1>
+    </div>
+
+    <!-- Cards in 4*x way -->
+    <div class="container">
+
+        <!-- First Row -->
+        <div class="row my-4">
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/ice creams.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Ice Creams</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">99</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/dark-chocolate-waffles.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Waffles</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9734; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">149</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/cake.jpeg" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Cakes</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9733; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">499</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm my-2 shop-item">
+                <div class="card shadow-lg">
+                    <img src="images/cupcakes.webp" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title shop-item-title">Cupcakes</h5>
+                        <p class="card-text">
+                            Rating: &#9733; &#9733; &#9733; &#9734; &#9734; <br>
+                        </p>
+                        <div class="row shop-items-details">
+                            <div class="col-6">
+                                <button class="btn btn-primary shop-item-button">Add to Cart</button>
+                            </div>
+                            <div class="col-6 justify-content-end p-2">
+                                <h5> Price - &#8377;<span class="shop-item-price">99</span> </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- First Row -->
+    </div>
+    <!-- Cards -->
+    <!-- Desert -->
+
+    <!-- My cart -->
+    <div id="my-cart-section" class="container btn-dark shadow zoom">
+        <h1 class="p-4 text-center mt-4 text-white" style="font-weight: 800px;text-shadow: 0 0 5px rgb(109, 221, 255);">
+            My Cart<i class="fas fa-shopping-cart p-1 icon" style="font-size: 30px;"></i><span class="badge badge-light" id="no-of-items-head">0</span></h1>
+    </div>
+
+    <!-- cart -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <!-- medius devices 10, phone 11 space mx-auto for center  -->
+                <div class="row mt-5 gx-3">
+                    <!-- mt : margin top, g is gutter and gx means horizontal space, gy is vertical and g is both -->
+
+                    <!-- left side div -->
+
+                    <!-- This is the main cart -->
+                    <div class="col-md-12 col-lg-8 col-11 mx-auto mb-lg-0 mb-5 cart-items">
+                    </div>
+
+                    <!-- right side div -->
+                    <div class="col-md-12 col-lg-4 col-11 mt-lg-0 mt-md-5 mx-0">
+                        <div class="right_side p-3 shadow bg-white">
+                            <h2 class="product_name mb-5">The total Amount of</h2>
+                            <div class="price_individual d-flex justify-content-between">
+                                <p>Product Amount</p>
+                                <p>&#8377;<span id="productTotalAmount">0.00</span></p>
+                            </div>
+                            <div class="price_individual d-flex justify-content-between">
+                                <p>Shipping Charge <small>(below 500)</small> </p>
+                                <p>&#8377;<span id="shippingCharges">50.00</span></p>
+                            </div>
+                            <div class="price_individual d-flex justify-content-between">
+                                <p>Discount (20%)</p>
+                                <p>&#8377;<span id="discount">00.00</span></p>
+                            </div>
+                            <hr />
+                            <div class="total-amt d-flex justify-content-between font-weight-bold">
+                                <p>Total amount (including GST) </p>
+                                <p>&#8377;<span id="finalTotalAmount">0.00</span> </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 px-5">
+                                    <button class="btn btn-primary btn-checkout">Checkout</button>
+                                </div>
+                                <div class="col-6 px-5">
+                                    <button class="btn btn-clear-cart btn-danger" style="width: 150%;"><i class="fas fa-trash"></i>&nbsp;Clear</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- discount code part -->
+                        <div class="discount_code mt-3 shadow">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <span class="d-flex justify-content-between" data-toggle="collapse"
+                                        href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        Add a discount code (optional)
+                                        <span><i class="fas fa-chevron-down pt-1"></i></span>
+                                    </span>
+                                    <div class="" id="collapseExample">
+                                        <div class="mt-3">
+                                            <input type="text" name="" id="discountCode"
+                                                class="form-control font-weight-bold"
+                                                placeholder="Enter the discount code">
+                                            <small id="errorThrow" class="text-dark mt-3">code is Delicious</small>
+                                        </div>
+                                        <button class="btn btn-primary btn-sm mt-3"
+                                            onclick="discount_code()">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- discount code ends -->
+
+                        <div class="mt-3 shadow p-3 bg-white shadow">
+                            <div class="pt-4">
+                                <h5>Expectep delievery date</h5>
+                                <p>Day after tommorow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart -->
+
+
+    <!-- Footer Section -->
+    <section class="mt-5">
+        <!-- Footer -->
+        <footer class="bg-dark text-white">
+            <!-- <footer class="" style="background-color: #D4D4D4D4;"> -->
+            <!-- Grid container -->
+            <div class="container p-4">
+
+                <!-- Company logo -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 mb-12 mb-md-12">
+                        <h1 class="logo">Delicious</h1>
+                    </div>
+                </div>
+                <!-- Company logo -->
+
+                <hr><!-- Horizontal Rule -->
+
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-3 mb-3 mb-md-0">
+                        <h5 class="text-uppercase">COMPANY</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Who We Are
+                            </li>
+                            <li>
+                                Blog
+                            </li>
+                            <li>
+                                Careers
+                            </li>
+                            <li>
+                                Report Fraud
+                            </li>
+                            <li>
+                                Contact
+                            </li>
+                            <li>
+                                Financial Information
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-3 mb-3 mb-md-0">
+                        <h5 class="text-uppercase">FOR FOODIES</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Code of Conduct
+                            </li>
+                            <li>
+                                Community
+                            </li>
+                            <li>
+                                Blogger Help
+                            </li>
+                            <li>
+                                Mobile Apps
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-3 mb-3 mb-md-0">
+                        <h5 class="text-uppercase">FOR YOU</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Privacy
+                            </li>
+                            <li>
+                                Terms
+                            </li>
+                            <li>
+                                Security
+                            </li>
+                            <li>
+                                Sitemap
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-3 mb-3 mb-md-0 text-center justify-content-between">
+                        <h5 class="text-uppercase mb-2">Connect</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <div class="row justify-content-center my-2 mb-4">
+                                    <!-- Facebook -->
+                                    <div class="col-2">
+                                        <i class="fab fa-facebook-square zoom icon"></i>
+                                    </div>
+
+                                    <!-- Google -->
+                                    <div class="col-2">
+                                        <i class="fab fa-google zoom icon"></i>
+                                    </div>
+
+                                    <!-- Instagram -->
+                                    <div class="col-2">
+                                        <i class="fab fa-instagram zoom icon"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-light border border-secondary mb-2 px-4 zoom">
+                                    <i class="fab fa-google-play"></i>Download
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    class="btn btn-light border border-secondary mb-2  bg-dark text-white px-4 zoom">
+                                    <i class="fab fa-app-store-ios" style="font-size:14px;"></i> Download
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <hr>
+
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <span class="text-white" href="">Delicious. </span>
+                All Rights Reserved.
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+    <!-- <Footer> -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
