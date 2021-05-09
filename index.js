@@ -177,7 +177,7 @@ function addItemToCart(title, price, imageSrc, button) {
         }
     }
     var cartRowContents = `
-    <div class="cart-item shadow">
+    <div class="cart-item shadow mb-2">
         <div class="card p-4">
 
             <div class="row">
